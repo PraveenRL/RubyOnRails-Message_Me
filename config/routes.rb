@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   # resources :users
   # resources :messages
 
+  mount ActionCable.server, at: '/cable'
+
 end
